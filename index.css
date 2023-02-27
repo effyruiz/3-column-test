@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #FFF ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cars {
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 1rem;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: #FFF;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: #FFF;
+    font-size: 15px;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #FFF;
+    padding: 1rem 1rem 1rem 1rem;
+    border-style: hidden;
+    border-radius: 2rem;
+}
+
+.cars-sedans {
+    background-color:  #e38826;
+    padding: 2rem;
+}
+
+.cars-suvs {
+    background-color: #006970;
+    padding: 2rem;
+}
+
+.cars-luxury {
+    background-color: #004241;
+    padding: 2rem;
+}
+
+
+.cars-sedans button {
+    color:  #e38826;
+}
+
+.cars-suvs button {
+    color: #006970;
+}
+
+.cars-luxury button {
+    color: #004241;
+}
+
+.cars-sedans button:active {
+    border-style: ridge;
+    border-color: #FFF;
+    color: #FFF;
+    background-color:  #e38826;
+    
+}
+
+.cars-suvs button:active {
+    border-style: ridge;
+    border-color: #FFF;
+    color: #FFF;
+    background-color: #006970;
+    border-width: 0,3rem;
+   
+}
+
+.cars-luxury button:active {
+    border-style: ridge;
+    border-color: #FFF;
+    color: #FFF;
+    background-color: #004241;
+    
+}
+
+
+/* When the browser is at least 425px and above */
+@media screen and (min-width: 425px) {
+    .cars .cars-sedans ,.cars .cars-suvs ,.cars .cars-luxury {
+        width: 50%;
+       margin: 6rem;
+    }
+  }
