@@ -17,9 +17,8 @@ body {
 
 .cars {
     display: flex;
+    flex-direction: column;
     height: 300px;
-    flex-wrap: wrap;
-    flex-direction: row;
     margin: 0 1rem;
 }
 
@@ -102,8 +101,12 @@ button {
 
 /* When the browser is at least 425px and above */
 @media screen and (min-width: 425px) {
+
+    .cars {
+        flex-flow: column;
+        flex-wrap: nowrap;
+    }
     .cars .cars-sedans ,.cars .cars-suvs ,.cars .cars-luxury {
-        width: 50%;
-       margin: 6rem;
+        width: 25%;
     }
   }
