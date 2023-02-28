@@ -102,10 +102,10 @@ button {
 @media screen and (min-width: 425px) {
 
     .cars {
-        flex-flow: column;
+        flex-flow: row;
         flex-wrap: nowrap;
     }
     .cars .cars-sedans ,.cars .cars-suvs ,.cars .cars-luxury {
-        width: 25%;
+        width: 100%;
     }
   }
