@@ -18,8 +18,7 @@ body {
 .cars {
     display: flex;
     flex-direction: column;
-    height: 300px;
-    margin: 0 1rem;
+    margin: 2rem 1rem;
 }
 
 h1 {
